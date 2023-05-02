@@ -1,0 +1,838 @@
+@font-face {
+    font-family: 'Inknut Antiqua';
+    src: url("Font/InknutAntiqua-Regular.ttf");
+    src: url("Font/InknutAntiqua-Bold.ttf");
+    src: url("Font/InknutAntiqua-Regular.ttf");
+    src: url("Font/InknutAntiqua-SemiBold.ttf");
+    font-family: 'Merriweather Sans';
+    src: url("Font/static/MerriweatherSans-Bold.ttf");
+    src: url("Font/static/MerriweatherSans-Regular.ttf");
+    font-family: 'Inria Sans';
+    src: url("Font/InriaSans-Regular.ttf");
+    src: url("Font/InriaSans-Bold.ttf");
+}
+
+body .Pagina{
+    background-color: #DDDBB5;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0;
+}
+    
+body .Pagina .BarraNav {
+    background-color: #7BA389;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+}
+
+body .Pagina .BarraNav .Brand > a {
+    color: #000;
+    font-size: 40px;
+    font-family: "Font/InknutAntiqua-Regular.ttf";
+    margin-left: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+body .Pagina .BarraNav .ButtonIcons {
+    justify-self: center;
+    padding: 8px 10px;
+}
+
+body .Pagina .BarraNav .ButtonIcons > a:link {
+    border: none;
+    background-color: #7BA389;
+    color: #000;
+    font-size: 26px;
+    font-family: "Font/InknutAntiqua-Regular.ttf";
+    margin-top: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+body .Pagina .BarraNav .ButtonIcons > a:hover{
+    border: none;
+    background-color: #7BA389;
+    color: #DDDBB5;
+    font-size: 26px;
+    font-family: "Font/InknutAntiqua-Regular.ttf";
+    margin-top: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+    
+body .Pagina .Now{
+    grid-column-start: 1;
+    grid-column-end: 13;
+    justify-content: center;
+    padding: 100px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+    
+body .Pagina .Now .titulo {
+    align-items: start;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+    
+body .Pagina .Now .titulo > h1 {
+    font-family: "Font/InknutAntiqua-Bold.ttf";
+    font-size: 58;
+    text-align: center;
+    width: 100%;
+}
+    
+body .Pagina .Now .titulo .line {
+    justify-content: center;
+    display: flex;
+}
+    
+body .Pagina .Now .titulo .line > span {
+    border: 2px solid #000000;
+    width: 10%;
+    margin-bottom: 50px;
+}
+    
+body .Pagina .Now .PText {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 100px;
+}
+    
+body .Pagina .Now .PText .left > h1 {
+    font-size: 36px;
+}
+    
+body .Pagina .Now .PText .left > p {
+    width: 676px;
+    font-size: 32px;
+}
+    
+body .Pagina .Now .PText .right > h1 {
+    font-size: 36px;
+}
+    
+body .Pagina .Now .PText .right > p {
+    width: 676px;
+    font-size: 32px;
+}
+    
+body .Pagina .Contactos {
+    background-color: #B1A0A0;
+    display: flex;
+    height: 491px;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    justify-content: space-between;
+}
+    
+body .Pagina .Contactos .left {
+    height: 272px;
+    width: 447px;
+    margin-left: 70px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+    
+body .Pagina .Contactos .left .Contacts > h3 {
+    font-size: 36px;
+    font-family:"Font/InknutAntiqua-SemiBold.ttf";
+    color: #6F593D;
+}
+    
+body .Pagina .Contactos .left .Contacts .gmail > h4 {
+    font-size: 24px;
+    font-family:"Font/InriaSans-Bold.ttf";
+    color: #786060;
+}
+    
+body .Pagina .Contactos .left .Contacts .gmail > h5{
+    font-size: 24px;
+    font-family:"Font/InriaSans-Regular.ttf";
+    color: #786060;
+}
+    
+body .Pagina .Contactos .left .Contacts .behance > h4 {
+    font-size: 24px;
+    font-family:"Font/InriaSans-Bold.ttf";
+    color: #786060;
+}
+    
+body .Pagina .Contactos .left .Contacts .behance > h5{
+    font-size: 24px;
+    font-family:"Font/InriaSans-Regular.ttf";
+    color: #786060;
+}
+    
+body .Pagina .Contactos .Right{
+    height: 296px;
+    width: 447px;
+    margin-right: 70px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+    
+body .Pagina .Contactos .Right .Redes > h3 {
+    font-size: 36px;
+    font-family:"Font/InknutAntiqua-SemiBold.ttf";
+    color: #6F593D;
+}
+    
+body .Pagina .Contactos .Right .Redes .instagram > h4 {
+    font-size: 24px;
+    font-family:"Font/InriaSans-Bold.ttf";
+    color: #786060;
+}
+    
+body .Pagina .Contactos .Right .Redes .instagram > h5{
+    font-size: 24px;
+    font-family:"Font/InriaSans-Regular.ttf";
+    color: #786060;
+}
+    
+body .Pagina .Contactos .Right .Redes .facebook > h4 {
+    font-size: 24px;
+    font-family:"Font/InriaSans-Bold.ttf";
+    color: #786060; 
+    }
+    
+body .Pagina .Contactos .Right .Redes .facebook > h5{
+    font-size: 24px;
+    font-family:"Font/InriaSans-Regular.ttf";
+    color: #786060;
+}
+
+@media only screen and (max-width: 1600px){
+
+    body .Pagina{
+        background-color: #DDDBB5;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        margin: 0;
+    }
+    
+    body .Pagina .BarraNav {
+        background-color: #7BA389;
+        grid-column-start: 1;
+        grid-column-end: 13;
+        display: flex;
+        height: 60px;
+        justify-content: space-between;
+    }
+    
+    body .Pagina .BarraNav .Brand > a {
+        color: #000;
+        font-size: 40px;
+        font-family: "Font/InknutAntiqua-Regular.ttf";
+        margin-left: 20px;
+        margin-bottom: 20px;
+        text-decoration: none;
+    }
+    
+    body .Pagina .BarraNav .ButtonIcons {
+        justify-self: center;
+        padding: 8px 10px;
+    }
+    
+    body .Pagina .BarraNav .ButtonIcons > a:link {
+        border: none;
+        background-color: #7BA389;
+        color: #000;
+        font-size: 26px;
+        font-family: "Font/InknutAntiqua-Regular.ttf";
+        margin-top: 20px;
+        margin-left: 10px;
+        text-decoration: none;
+    }
+    
+    body .Pagina .BarraNav .ButtonIcons > a:hover{
+        border: none;
+        background-color: #7BA389;
+        color: #DDDBB5;
+        font-size: 26px;
+        font-family: "Font/InknutAntiqua-Regular.ttf";
+        margin-top: 20px;
+        margin-left: 10px;
+        text-decoration: none;
+    }
+    
+    body .Pagina .Now{
+        grid-column-start: 1;
+        grid-column-end: 13;
+        justify-content: center;
+        padding: 100px;
+        text-align: center;
+        flex-wrap: wrap;
+    
+    }
+    
+    body .Pagina .Now .titulo {
+        align-items: start;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    body .Pagina .Now .titulo > h1 {
+        font-family: "Font/InknutAntiqua-Bold.ttf";
+        font-size: 34;
+        text-align: center;
+        width: 100%;
+    }
+    
+    body .Pagina .Now .titulo .line {
+        justify-content: center;
+        display: flex;
+    }
+    
+    body .Pagina .Now .titulo .line > span {
+        border: 2px solid #000000;
+        width: 10%;
+        margin-bottom: 50px;
+    }
+    
+    body .Pagina .Now .PText {
+        display: flex;
+        justify-content: space-between;
+        grid-column-start: 1;
+        grid-column-end: 13;
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-bottom: 100px;
+    }
+    
+    body .Pagina .Now .PText .left {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    
+    body .Pagina .Now .PText .left > h1 {
+        font-size: 28px;
+    }
+    
+    body .Pagina .Now .PText .left > p {
+        width: 376px;
+        font-size: 18px;
+    }
+    
+    body .Pagina .Now .PText .right > h1 {
+        font-size: 28px;
+    }
+    
+    body .Pagina .Now .PText .right > p {
+        width: 376px;
+        font-size: 18px;
+    }
+
+    body .Pagina .Contactos {
+        background-color: #B1A0A0;
+        display: flex;
+        height: 351px;
+        grid-column-start: 1;
+        grid-column-end: 13;
+        justify-content: space-between;
+    }
+    
+    body .Pagina .Contactos .left {
+        height: 272px;
+        width: 447px;
+        margin-left: 70px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    
+    body .Pagina .Contactos .left .Contacts > h3 {
+        font-size: 26px;
+        font-family:"Font/InknutAntiqua-SemiBold.ttf";
+        color: #6F593D;
+    }
+    
+    body .Pagina .Contactos .left .Contacts .gmail > h4 {
+        font-size: 14px;
+        font-family:"Font/InriaSans-Bold.ttf";
+        color: #786060;
+    }
+    
+    body .Pagina .Contactos .left .Contacts .gmail > h5{
+        font-size: 14px;
+        font-family:"Font/InriaSans-Regular.ttf";
+        color: #786060;
+    }
+    
+    body .Pagina .Contactos .left .Contacts .behance > h4 {
+        font-size: 14px;
+        font-family:"Font/InriaSans-Bold.ttf";
+        color: #786060;
+    }
+    
+    body .Pagina .Contactos .left .Contacts .behance > h5{
+        font-size: 14px;
+        font-family:"Font/InriaSans-Regular.ttf";
+        color: #786060;
+    }
+    
+    body .Pagina .Contactos .Right{
+        height: 296px;
+        width: 447px;
+        margin-right: 70px;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+    
+    body .Pagina .Contactos .Right .Redes > h3 {
+        font-size: 26px;
+        font-family:"Font/InknutAntiqua-SemiBold.ttf";
+        color: #6F593D;
+    }
+    
+    body .Pagina .Contactos .Right .Redes .instagram > h4 {
+        font-size: 14px;
+        font-family:"Font/InriaSans-Bold.ttf";
+        color: #786060;
+    }
+    
+    body .Pagina .Contactos .Right .Redes .instagram > h5{
+        font-size: 14px;
+        font-family:"Font/InriaSans-Regular.ttf";
+        color: #786060;
+    }
+    
+    body .Pagina .Contactos .Right .Redes .facebook > h4 {
+        font-size: 14px;
+        font-family:"Font/InriaSans-Bold.ttf";
+        color: #786060; 
+    }
+    
+    body .Pagina .Contactos .Right .Redes .facebook > h5{
+        font-size: 14px;
+        font-family:"Font/InriaSans-Regular.ttf";
+        color: #786060;
+    }
+}
+
+@media only screen and (max-width: 1366px){
+
+    body .Pagina{
+        background-color: #DDDBB5;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        margin: 0;
+    }
+    
+    body .Pagina .BarraNav {
+        background-color: #7BA389;
+        grid-column-start: 1;
+        grid-column-end: 13;
+        display: flex;
+        height: 60px;
+        justify-content: space-between;
+    }
+    
+    body .Pagina .BarraNav .Brand > a {
+        color: #000;
+        font-size: 40px;
+        font-family: "Font/InknutAntiqua-Regular.ttf";
+        margin-left: 20px;
+        margin-bottom: 20px;
+        text-decoration: none;
+    }
+    
+    body .Pagina .BarraNav .ButtonIcons {
+        justify-self: center;
+        padding: 8px 10px;
+    }
+    
+    body .Pagina .BarraNav .ButtonIcons > a:link {
+        border: none;
+        background-color: #7BA389;
+        color: #000;
+        font-size: 26px;
+        font-family: "Font/InknutAntiqua-Regular.ttf";
+        margin-top: 20px;
+        margin-left: 10px;
+        text-decoration: none;
+    }
+    
+    body .Pagina .BarraNav .ButtonIcons > a:hover{
+        border: none;
+        background-color: #7BA389;
+        color: #DDDBB5;
+        font-size: 26px;
+        font-family: "Font/InknutAntiqua-Regular.ttf";
+        margin-top: 20px;
+        margin-left: 10px;
+        text-decoration: none;
+    }
+    
+    body .Pagina .Now{
+        grid-column-start: 1;
+        grid-column-end: 13;
+        justify-content: center;
+        padding: 100px;
+        text-align: center;
+        flex-wrap: wrap;
+    
+    }
+    
+    body .Pagina .Now .titulo {
+        align-items: start;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    body .Pagina .Now .titulo > h1 {
+        font-family: "Font/InknutAntiqua-Bold.ttf";
+        font-size: 38;
+        text-align: center;
+        width: 100%;
+    }
+    
+    body .Pagina .Now .titulo .line {
+        justify-content: center;
+        display: flex;
+    }
+    
+    body .Pagina .Now .titulo .line > span {
+        border: 2px solid #000000;
+        width: 10%;
+        margin-bottom: 50px;
+    }
+    
+    body .Pagina .Now .PText {
+        display: flex;
+        justify-content: space-between;
+        grid-column-start: 1;
+        grid-column-end: 13;
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-bottom: 100px;
+    }
+    
+    body .Pagina .Now .PText .left {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    
+    body .Pagina .Now .PText .left > h1 {
+        font-size: 26px;
+    }
+    
+    body .Pagina .Now .PText .left > p {
+        width: 376px;
+        font-size: 16px;
+    }
+    
+    body .Pagina .Now .PText .right > h1 {
+        font-size: 26px;
+    }
+    
+    body .Pagina .Now .PText .right > p {
+        width: 376px;
+        font-size: 16px;
+    }
+
+    body .Pagina .Contactos {
+        background-color: #B1A0A0;
+        display: flex;
+        height: 351px;
+        grid-column-start: 1;
+        grid-column-end: 13;
+        justify-content: space-between;
+    }
+    
+    body .Pagina .Contactos .left {
+        height: 272px;
+        width: 447px;
+        margin-left: 70px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    
+    body .Pagina .Contactos .left .Contacts > h3 {
+        font-size: 26px;
+        font-family:"Font/InknutAntiqua-SemiBold.ttf";
+        color: #6F593D;
+    }
+    
+    body .Pagina .Contactos .left .Contacts .gmail > h4 {
+        font-size: 14px;
+        font-family:"Font/InriaSans-Bold.ttf";
+        color: #786060;
+    }
+    
+    body .Pagina .Contactos .left .Contacts .gmail > h5{
+        font-size: 14px;
+        font-family:"Font/InriaSans-Regular.ttf";
+        color: #786060;
+    }
+    
+    body .Pagina .Contactos .left .Contacts .behance > h4 {
+        font-size: 14px;
+        font-family:"Font/InriaSans-Bold.ttf";
+        color: #786060;
+    }
+    
+    body .Pagina .Contactos .left .Contacts .behance > h5{
+        font-size: 14px;
+        font-family:"Font/InriaSans-Regular.ttf";
+        color: #786060;
+    }
+    
+    body .Pagina .Contactos .Right{
+        height: 296px;
+        width: 447px;
+        margin-right: 70px;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+    
+    body .Pagina .Contactos .Right .Redes > h3 {
+        font-size: 26px;
+        font-family:"Font/InknutAntiqua-SemiBold.ttf";
+        color: #6F593D;
+    }
+    
+    body .Pagina .Contactos .Right .Redes .instagram > h4 {
+        font-size: 14px;
+        font-family:"Font/InriaSans-Bold.ttf";
+        color: #786060;
+    }
+    
+    body .Pagina .Contactos .Right .Redes .instagram > h5{
+        font-size: 14px;
+        font-family:"Font/InriaSans-Regular.ttf";
+        color: #786060;
+    }
+    
+    body .Pagina .Contactos .Right .Redes .facebook > h4 {
+        font-size: 14px;
+        font-family:"Font/InriaSans-Bold.ttf";
+        color: #786060; 
+    }
+    
+    body .Pagina .Contactos .Right .Redes .facebook > h5{
+        font-size: 14px;
+        font-family:"Font/InriaSans-Regular.ttf";
+        color: #786060;
+    }
+}
+
+@media only screen and (max-width: 830px){
+    body .Pagina{
+        background-color: #DDDBB5;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        margin: 0;
+    }
+    
+    body .Pagina .BarraNav {
+        background-color: #7BA389;
+        grid-column-start: 1;
+        grid-column-end: 13;
+        display: flex;
+        height: 60px;
+        justify-content: space-between;
+    }
+    
+    body .Pagina .BarraNav .Brand > a {
+        color: #000;
+        font-size: 40px;
+        font-family: "Font/InknutAntiqua-Regular.ttf";
+        margin-left: 20px;
+        margin-bottom: 20px;
+        text-decoration: none;
+    }
+    
+    body .Pagina .BarraNav .ButtonIcons {
+        justify-self: center;
+        padding: 8px 10px;
+    }
+    
+    body .Pagina .BarraNav .ButtonIcons > a:link {
+        border: none;
+        background-color: #7BA389;
+        color: #000;
+        font-size: 26px;
+        font-family: "Font/InknutAntiqua-Regular.ttf";
+        margin-top: 20px;
+        margin-left: 10px;
+        text-decoration: none;
+    }
+    
+    body .Pagina .BarraNav .ButtonIcons > a:hover{
+        border: none;
+        background-color: #7BA389;
+        color: #DDDBB5;
+        font-size: 26px;
+        font-family: "Font/InknutAntiqua-Regular.ttf";
+        margin-top: 20px;
+        margin-left: 10px;
+        text-decoration: none;
+    }
+    
+    body .Pagina .Now{
+        grid-column-start: 1;
+        grid-column-end: 13;
+        justify-content: center;
+        padding: 100px;
+        text-align: center;
+        flex-wrap: wrap;
+    
+    }
+    
+    body .Pagina .Now .titulo {
+        align-items: start;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    body .Pagina .Now .titulo > h1 {
+        font-family: "Font/InknutAntiqua-Bold.ttf";
+        font-size: 38;
+        text-align: center;
+        width: 100%;
+    }
+    
+    body .Pagina .Now .titulo .line {
+        justify-content: center;
+        display: flex;
+    }
+    
+    body .Pagina .Now .titulo .line > span {
+        border: 2px solid #000000;
+        width: 10%;
+        margin-bottom: 50px;
+    }
+    
+    body .Pagina .Now .PText {
+        display: flex;
+        justify-content: space-between;
+        grid-column-start: 1;
+        grid-column-end: 13;
+        margin-left: 20px;
+        margin-right: 60px;
+        margin-bottom: 100px;
+    }
+    
+    body .Pagina .Now .PText .left {
+        margin-right: 100px;
+    }
+    
+    body .Pagina .Now .PText .left > h1 {
+        font-size: 26px;
+    }
+    
+    body .Pagina .Now .PText .left > p {
+        width: 176px;
+        font-size: 16px;
+    }
+
+    body .Pagina .Now .PText .right{
+        margin-left: 50px;
+    }
+    
+    body .Pagina .Now .PText .right > h1 {
+        font-size: 26px;
+    }
+    
+    body .Pagina .Now .PText .right > p {
+        width: 176px;
+        font-size: 16px;
+    }
+
+    body .Pagina .Contactos {
+        background-color: #B1A0A0;
+        display: flex;
+        height: 351px;
+        grid-column-start: 1;
+        grid-column-end: 13;
+        justify-content: space-between;
+    }
+    
+    body .Pagina .Contactos .left {
+        height: 272px;
+        width: 447px;
+        margin-left: 70px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    
+    body .Pagina .Contactos .left .Contacts > h3 {
+        font-size: 26px;
+        font-family:"Font/InknutAntiqua-SemiBold.ttf";
+        color: #6F593D;
+    }
+    
+    body .Pagina .Contactos .left .Contacts .gmail > h4 {
+        font-size: 14px;
+        font-family:"Font/InriaSans-Bold.ttf";
+        color: #786060;
+    }
+    
+    body .Pagina .Contactos .left .Contacts .gmail > h5{
+        font-size: 14px;
+        font-family:"Font/InriaSans-Regular.ttf";
+        color: #786060;
+    }
+    
+    body .Pagina .Contactos .left .Contacts .behance > h4 {
+        font-size: 14px;
+        font-family:"Font/InriaSans-Bold.ttf";
+        color: #786060;
+    }
+    
+    body .Pagina .Contactos .left .Contacts .behance > h5{
+        font-size: 14px;
+        font-family:"Font/InriaSans-Regular.ttf";
+        color: #786060;
+    }
+    
+    body .Pagina .Contactos .Right{
+        height: 296px;
+        width: 447px;
+        margin-right: 70px;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+    
+    body .Pagina .Contactos .Right .Redes > h3 {
+        font-size: 26px;
+        font-family:"Font/InknutAntiqua-SemiBold.ttf";
+        color: #6F593D;
+    }
+    
+    body .Pagina .Contactos .Right .Redes .instagram > h4 {
+        font-size: 14px;
+        font-family:"Font/InriaSans-Bold.ttf";
+        color: #786060;
+    }
+    
+    body .Pagina .Contactos .Right .Redes .instagram > h5{
+        font-size: 14px;
+        font-family:"Font/InriaSans-Regular.ttf";
+        color: #786060;
+    }
+    
+    body .Pagina .Contactos .Right .Redes .facebook > h4 {
+        font-size: 14px;
+        font-family:"Font/InriaSans-Bold.ttf";
+        color: #786060; 
+    }
+    
+    body .Pagina .Contactos .Right .Redes .facebook > h5{
+        font-size: 14px;
+        font-family:"Font/InriaSans-Regular.ttf";
+        color: #786060;
+    }
+}
+
+@media only screen and (max-width: 360px){}
